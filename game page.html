@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Hangman Game</title>
+  </head>
+  <body>
+    <h1> Hangman </h1>
+
+    <div id="lives"> Lives: 10 </div>
+
+    <div id="game_end"> </div>
+
+    <div id="currentword"> </div>
+
+    <img id="man" src="images/no wrong.png" alt="hangman picture" class="resize shift_right">
+
+    <div id="button_panel">
+      <div>
+        <button id="A" class="letter" type="button"> A </button>
+        <button id="B" class="letter" type="button"> B </button>
+        <button id="C" class="letter" type="button"> C </button>
+        <button id="D" class="letter" type="button"> D </button>
+        <button id="E" class="letter" type="button"> E </button>
+        <button id="F" class="letter" type="button"> F </button>
+        <button id="G" class="letter" type="button"> G </button>
+        <button id="H" class="letter" type="button"> H </button>
+        <button id="I" class="letter" type="button"> I </button>
+        <button id="J" class="letter" type="button"> J </button>
+        <button id="K" class="letter" type="button"> K </button>
+        <button id="L" class="letter" type="button"> L </button>
+        <button id="M" class="letter" type="button"> M </button>
+        <button id="N" class="letter" type="button"> N </button>
+      </div>
+      <div>
+        <button id="O" class="letter" type="button"> O </button>
+        <button id="P" class="letter" type="button"> P </button>
+        <button id="Q" class="letter" type="button"> Q </button>
+        <button id="R" class="letter" type="button"> R </button>
+        <button id="S" class="letter" type="button"> S </button>
+        <button id="T" class="letter" type="button"> T </button>
+        <button id="U" class="letter" type="button"> U </button>
+        <button id="V" class="letter" type="button"> V </button>
+        <button id="W" class="letter" type="button"> W </button>
+        <button id="X" class="letter" type="button"> X </button>
+        <button id="Y" class="letter" type="button"> Y </button>
+        <button id="Z" class="letter" type="button"> Z </button>
+      </div>
+    </div>
+
+    <button id="replay" type="button" onClick="document.location.reload(true)"> Replay </button>
+
+  </body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="hangman.js"></script>
+</html>
