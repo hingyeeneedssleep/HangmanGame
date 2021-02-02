@@ -11,7 +11,7 @@ for (var i = 0; i < word.length; i++) {
 var currentword = chars.join("");
 document.getElementById("currentword").innerHTML = currentword;
 
-var buttons = document.querySelectorAll("button");
+var buttons = document.querySelectorAll(".letter");
 for (let i = 0; i < buttons.length; i++) {
     const button = buttons[i];
     button.addEventListener('click', function(e) {
@@ -75,10 +75,16 @@ for (let i = 0; i < buttons.length; i++) {
 
         if (lives == 0) {
           document.getElementById("game_end").innerHTML = "You died." + "<br />" + "The word is " + word + ".";
+          for (let i = 0; i < buttons.length; i++) { // disable all buttons after game ends
+            buttons[i].disabled = true;
+          }
         }
 
         if (currentword == word) {
           document.getElementById("game_end").innerHTML = "You won!";
+          for (let i = 0; i < buttons.length; i++) { // disable all buttons after game ends
+            buttons[i].disabled = true;
+          }
         }
       }
     });
