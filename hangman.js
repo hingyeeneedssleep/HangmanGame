@@ -75,14 +75,14 @@ for (let i = 0; i < buttons.length; i++) {
 
         if (lives == 0) {
           document.getElementById("game_end").innerHTML = "You died." + "<br />" + "The word is " + word + ".";
-          for (let i = 0; i < buttons.length; i++) { // disable all buttons after game ends
+          for (let i = 0; i < buttons.length; i++) { // disable all alphabet buttons after game ends
             buttons[i].disabled = true;
           }
         }
 
         if (currentword == word) {
           document.getElementById("game_end").innerHTML = "You won!";
-          for (let i = 0; i < buttons.length; i++) { // disable all buttons after game ends
+          for (let i = 0; i < buttons.length; i++) { // disable all alphabet buttons after game ends
             buttons[i].disabled = true;
           }
         }
