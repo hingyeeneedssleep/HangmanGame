@@ -7,4 +7,4 @@ Possible things to add:
 - Categories of words
 
 Minor issues to fix: 
-- Ensure that all alphabet buttons are disabled when the user is done with each round of game
+- Ensure that all alphabet buttons are disabled when the user is done with each round of game (fixed!)
